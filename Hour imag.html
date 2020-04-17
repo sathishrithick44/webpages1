@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Demo</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=MTyIYMa_DISY7BKHOTdu38v_WTaDqPocj9SEXOeF0B4JLPeWNoetZlXpw6sCV7fb5XqIyY8xididWHOYl0DGje_nLwglSRQw7PeeSOtFcbocqdKnONIrb5gW6SQntr2Ji2KlvY1lGLlo6hAhd5oWKdEQxi6DxcAquBX8dKPIyi5OFIoCKl8ydYQtC_Hq_05lK_ubg4t8cpc3AZDGdoROIVqzzcVCsX19Get_MY93BqnW8D0xuV1BtqlNS1UATYRCL5uKGM0WEtUStWvkNnh6FBZozysWFkK4DL-Y9YqAMR8L1nsidYS2vOQVn7Q8HAsRCjSo0uEss-kbXDAI6AHelk7tjl6TzwQhMfHgt2wGWzyVnnNnT3o_s0t7hDkiFAA5g7KHK0F99UojMMr1CKQ7sr4VjV8OPlPuzpTViwtAHQ1nttcbsSBFaYF21IoQFUXECCUJklmLF0INDO1-lLRMrj9WTJHAzV6izOfypHfsQAp1_vS_gaW7W2Yj2-MGEQvbLJ7HgTvnJ1KV9XUjCGxpTN8vny_MvrY1alqiVeMgSuMyD89iyrdeXoHTUuIElEGc-M2-ttujaH886izGuKdlGN8sNT7I5EsXmwYaTmlV1IGQXKoSWw6ujhFuw1xoRDXwdXD9r2Ob5gYtU2Hv9YexgG6C_ZmVaT2PrkgkFKo9zBrNmTRZTi1jj3E_BBGbaw6bCyLHPYgxaGjXEhhazWzoOSVti_Y00ok_tkLzux_59TE8tf1DsipeUEl4DxvbRSVlszEFFtIirm0zwY4-_gjaf8eMuF0RQFz_G27aHMKYoXs_vSu_CJsKEryvoDKcZf_x0dFws04tEqNWUseCmdm4rfn56HRVkXZbEwufM2YeqJEZPj8ol0NpjibZfWcSxK3adlGDIcgWlBlL8BsoFjw0eZchlS8pms17rnwtZJv6fR-RQailIgpjjfKfg1tzqTjuTj_AiDG-GQi72nKLQ9t5O0KYQLHFx97FnNqBeYgL6fClTmfnkiduJP41TB4MSI-oPVMsXTJnpzIztMtS_Zi2EY69f0b98sdj4MG1zZ0wg0Ep9dRIixWUWEk-8Z1Cgx22Eut10JmNxhEmtk8dHnuCVhqayU0zfuG6gtEqO_cNBilYIAX40_Hp8PJM4meoVLRUBxX_RpW6fT0KC0TXFnXD_khJ2_hApE7aEy-4pACdOAg" nonce="e427abd245a4b95a5c8e4620cd83326e" charset="UTF-8"></script></head>
+<body onload="startTime();">
+<img id="img1" />
+<script>
+var imgArray = new Array("https://i.ytimg.com/vi/1roy4o4tqQM/maxresdefault.jpg","https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png","https://www.kumulos.com/wp-content/uploads/2013/10/pikachu-6.png");
+var imgCount = 0;
+function startTime() {
+    if(imgCount == imgArray.length) {
+        imgCount = 0;
+    }
+    document.getElementById("img1").src = imgArray[imgCount];
+    imgCount++;
+    setTimeout("startTime()", 1000);
+}
+</script>
+</body>
+</html>

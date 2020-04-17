@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dp</title>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=PltRRZ0poxxLqhoFn-YinEGTtPXVdbC2QJ8ggkoAgzJE2xHN3gPCSP9JizXx5eWrkiE2ldDiY4G9t_-ldWnFrkV5hTo_OhwZQtaZTKlCYTKxNC_u6uaN4XsU7eNb-uSBrQq-vJYVdaGAcxkBI6tXVvH_O0dR0bNvskXbJY-cjzRBFQY3-YJJ03DT0AHpU-iTFMGYX_ktJbzQd9q9zlygAKsRsYxu8X1ucoxWDYILwVSvO0Yolc2BajhVIS_MlqkdoM3VyRaFT8gnvYttlmUUwXCh_pq_9CN8IFpl4Enx78eVr2Uh0VpTK9ib5JuV0ef4gxwsOH-nnUreC9kQHW5F5sqWQx7nujs1N6uAc0IQiNTs2GUIme4Kd1CRgoLNOzpjtvys-0C11zF2WzMVUE2E71UcZ37qRtm18zPO5b2yg1DUnccd_sm-U_2FG73HCYq4-x6ZZVJhiglWFon8n3i2Ay5kvRVhLPrLQKrI2ozr5jywXO8P6vb5PPXLmNOqesNqBhPXJNYSONisAlnlEyggcnLvSpPJTadHoOZ8lMsFjmYpMCLpFLaNczyk7KpR0sx4q1_61_R_OVILa74aqaRnr0SnMweJk1iMdZrWmdmsipHxY5ckbSSlT_3UHZpbQCybSqVhJLLTrV1PlnzbZrLDblpY4DXJoyiTIMsvqzJ4P2z20e6BjojBuXO6pbWnvV-tR2rX8EAPOoNy32EW4X1wtw2h4wTMe3APT0NWIvnrxoE9URE2BsESkI27wA2sZHQEUUWtsY88E346LHxUp7mDA09mFUYF8tSVWParvdL30NSNFrYB69lW8vcZsH6euXkq4qA4sdBJYisdkCo3QcfpQ1pToQ51HmXsue9LfOGNk4Fwo2bAzp0VqnTvZXVfA402mC7zRA37_sfM0CqY99ga4I_TPNfZzh3DHNTMRs7ZO1LoGU78QMyuSHXyTbuaV86Lmu546X19BejMJROoRfGqCIhwpBS1TsFg84W-dfCejU5fa73jgkCAPfUyxRn-mw9Ihy2Pm-Y3mt5638KPyOnN8GkqOSyKe9jo5VD-7nlFod_87XJhrdpEyVpElA5KUc2sLSIwQbAtKLo7J3zgsGiVtZf2BLwkgF8fTfK1vA5eh-jrD8sWha1UkU9ElZ2kNXZkz0XHMv1zYhKhpH0Xkdg23rVfCJvd-MpcZyt1WYkZktaxr_qdi76Er9qgzZb1aI4-fRKhvuTNwQsutnfGq_03NQ" nonce="e970e5b88152d59c73c63cec5792870b" charset="UTF-8"></script><script type="text/javascript">
+		function day(){
+			var f = new Date();
+			var days = ["Monday","Tuesday","wednesday","Thursday","Friday","Saturday","Sunday"];
+            document.getElementById("a").innerHTML = days[f.getDay()+1];
+			var g = new Date();
+			g.setDate( g.getDate() - 1 );
+
+            document.getElementById("b").innerHTML = g.getDate();
+
+			var h = new Date();
+			h.setFullYear( h.getFullYear() - 20 );
+
+            document.getElementById("c").innerHTML = h.getFullYear();
+            var i = new Date();
+            var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            document.getElementById("d").innerHTML = months[i.getMonth()-3];
+		   var j = new Date();
+           document.getElementById("e").innerHTML = j.getTime();
+           
+		
+		}
+	</script>
+</head>
+<body onload="day()">
+<p align="center">Birthday is </p>
+<div align="center"  id="a"></div>
+<p align="center">Birthdate is </p>
+<div align="center" id="b"></div>
+<p align="center">Birthyear is </p>
+<div align="center" id="c"></div>
+<p align="center">Birthmonth is </p>
+<div align="center" id="d"></div>
+<p align="center">Birthtime is </p>
+<div align="center" id="e"></div>
+</body>
+<style type="text/css">
+	div{
+		background-color: pink;
+		font-family: cursive;
+	}
+	body{
+		background-color: lightblue;
+	}
+</style>
+</html>

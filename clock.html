@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=QfeyOerNTWBB9em279UpXRcnwg2Du_v3ETQHEpVvhmUGJ_u57lo3AppjFLZrq9_BpRpVK0IWxoHQxiGWTQ_dC6BBDrnbOuwAfsCAQOHqPZx2whNJ_TzRyeHeOZcqcEEWx3UEiWvW__JflcDu2BO7VKpNaXBwH-mX6wp6c2rjaKoBrbeGQHUltYmi2sSMaSIlxvDCtgKft_JfeuPI0pKUBtMLU03JTrfcfa7tJ7E76T7ecxh3xD6EvAoEsB5yOTHZ8bitRWrNNFXbGhuis5vywuyA0xggopEVgx3Sy1KMraKpBP08we43km0V9SCF7Q-VlKD8O-AtMVPf7dsB1dX6Fv3vS1j6a7kVBdpIipC3F31-k-A_VbJFCluGX1FwxgU4Wuy77n52_QqvlxcohdTJFlm0MeujvJnZYu_MJq4Psd2oTwvBh6_DLNTwzEHiSkZpDaFOVySMBJvCNqmTPFcq5HYWi9EUCigx-pDnbZpE2QSfKhxOum28cOGVnDHM26n8W_OABE-5kLyejpSuaF4YmSn3FBMd1gsQCAxj6de8XLTpFI-wE87_vDTqc9vjE3aIWAUEPLuRUFP9baqcka0yLiBioKSEFdJcq4185vyHRdwXiHY7KdzIZ5uIYJKxSdU2fcvk7ujcXWHoq_9iG9AKoZgxBBqvg_PNv82LVBSqcnx-KUZCMuv4tUQpOa2KqTC-tw1MrfyjQEtNBAIuIOnAJ0u0-0ShMPXF_mHKTj_G8GYQhRBZLbMboIDfM5IGM1xcZx16ZBWgwED8CL9E-i7S0mUpRdL7K4PQ_4AwWNpaSgLVNGHFNappc_ZQHYhyjFwC3QR1Qd7TEXQZ1Wz03NOdrUdec2PGgU4tzAJUyyiPuOKKlzdmD0_iQEAEbQhLeDmnfzftBKXVwfRE8girSsIk3FVv2aWgv-xtfJZUIyzcI_6HZ5FlMBcaLuWD-tCNhWFofty-ALi2qIHwgjOLj0VHbBKmHb_fJImtCWLBNt6RkPnuCXO4fRlcosR1bgZ5pQOmqW25criUh_TRca7ZYlN0k5yWT7MUdO4IDoq5nWGFJeht8q-HNJKr_X-GH8EKziHYV5mwUSUYKLjrYwbPZCTn_jXzuaA1OF8o9jlVrJp1-7FcBhdsekaRw-syZ57_Ep4PJPjOv0kRhGCNn2olhFiobEAfvG0TF9snvPpqNm7dRbUM3O2ujvdYMU8_PSCR7o1bfudu0pqXCUg1H5H_Uulv3Q" nonce="792539f6d5ef79394da25c3fee3b658b" charset="UTF-8"></script><script type="text/javascript">
+		function Makearray(n){
+			this.length=n;
+			for (var i = 1; i <=n; i++) {
+				this[i]=0;
+			}
+		}
+
+		//Initialize Days Of Week Array
+		days=new Makearray(7);
+		days[0]="saturday"
+		days[1]="sunday"
+		days[2]="monday"
+		days[3]="tuesday"
+		days[4]="wednesday"
+		days[5]="thrusday"
+		days[6]="friday"
+
+//Initialize Month Array
+months=new Makearray(12);
+months[1]="january"
+months[2]="february"
+months[3]="march"
+months[4]="april"
+months[5]="may"
+months[6]="june"
+months[7]="july"
+months[8]="august"
+months[9]="september"
+months[10]="octomber"
+months[11]="november"
+months[12]="december"
+
+//Day of Week Function
+function compute(form){
+	var val1=parseInt(form.day.value,10)
+	if((val1<0)||(val1>31)){
+		alert("Day is out of range")
+	}
+	var val2=parseInt(form.month.value,10)
+	if((val2<0)||(val2>12)){
+		alert("month is out of range")
+	}
+	var val2x=parseInt(form.month.value,10)
+	var val3=parseInt(form.year.value,10)
+	if(val3<1900){
+		alert("you're that old")
+	}
+	if(val2==1){
+		val2x=13;
+		val3=val3-1
+}
+if(val2==2){
+	val2x=14;
+	val3=val3-1
+}
+var val4=parseInt(((val2x+1)*3)/5,10)
+var val5=parseInt(val3/4,10)
+var val6=parseInt(val3/100,10)
+var val7=parseInt(val3/400,10)
+var val8=val1+(val2x*2)+val4+val3+val5-val6+val7+2
+var val9=parseInt(val8/7,10)
+var val0=val8-(val9*7)
+form.result1.value=months[val2]+""+form.year.value
+form.result2.value=days[val0]
+}
+</script>
+<style type="text/css">
+	body{
+		background-color:pink;
+	}
+</style>
+</head>
+<body>
+
+	<h3 style="background-color: red"><i>on what day of the week were you born?</i></h3>
+	<b>
+		<p>Enter your birthday</b></p>
+		<h3 style="background-color: red"><i>on what day of the week were you born?</i></h3>
+		<b>
+			<p>Enter Your birthday</b></p>
+			<form>
+				<p>Month:<input TYPE="text" NAME="month" SIZE="2"></p>
+				<p>Day:<input TYPE="text" NAME="day" SIZE="2"></p>
+				<p>year:<input TYPE="text" NAME="year" SIZE="4"></p>
+				<p><input type="button" VALUE="update" onclick="compute(this.form"><input type="" NAME="reset">
+					VALUE="clear"></p>
+					<p>Date Of Birth:<input TYPE="text" NAME="result1" SIZE="18"></p>
+					<p>Date Of Week:<input TYPE="text" NAME="result2" SIZE="18"></p>
+				</form>
+</body>
+</html>
